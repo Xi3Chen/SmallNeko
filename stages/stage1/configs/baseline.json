@@ -1,0 +1,18 @@
+{
+  "description": "Stage 1 0.1B standard pre-LN decoder-only Transformer baseline",
+  "batch_size": 32,
+  "block_size": 512,
+  "n_layer": 14,
+  "n_head": 12,
+  "n_embd": 768,
+  "dropout": 0.1,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.1,
+  "grad_clip": 1.0,
+  "max_iters": 30000,
+  "eval_interval": 500,
+  "eval_iters": 20,
+  "log_interval": 20,
+  "save_interval": 500,
+  "seed": 1337
+}

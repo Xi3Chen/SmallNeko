@@ -1,0 +1,71 @@
+{
+  "format_version": 1,
+  "description": "Expanded stage 1 mixture for a Chinese small-model baseline",
+  "total_target_bytes": 500000000,
+  "validation_ratio": 0.1,
+  "seed": 1337,
+  "sources": [
+    {
+      "name": "wikipedia_zh",
+      "kind": "parquet",
+      "dataset": "wikimedia/wikipedia",
+      "config": "20231101.zh",
+      "split": "train",
+      "text_field": "text",
+      "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.zh/train-00000-of-00006.parquet",
+      "weight": 0.35,
+      "license": "CC-BY-SA-3.0 and GFDL"
+    },
+    {
+      "name": "wikipedia_zh_01",
+      "kind": "parquet",
+      "dataset": "wikimedia/wikipedia",
+      "config": "20231101.zh",
+      "split": "train",
+      "text_field": "text",
+      "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.zh/train-00001-of-00006.parquet",
+      "weight": 0.2,
+      "license": "CC-BY-SA-3.0 and GFDL"
+    },
+    {
+      "name": "wikipedia_zh_02",
+      "kind": "parquet",
+      "dataset": "wikimedia/wikipedia",
+      "config": "20231101.zh",
+      "split": "train",
+      "text_field": "text",
+      "url": "https://huggingface.co/datasets/wikimedia/wikipedia/resolve/main/20231101.zh/train-00002-of-00006.parquet",
+      "weight": 0.15,
+      "license": "CC-BY-SA-3.0 and GFDL"
+    },
+    {
+      "name": "openwebmath_en",
+      "kind": "parquet",
+      "dataset": "open-web-math/open-web-math",
+      "config": "default",
+      "split": "train",
+      "text_field": "text",
+      "url": "https://huggingface.co/datasets/open-web-math/open-web-math/resolve/main/data/train-00000-of-00114-5a023365406cb9c4.parquet",
+      "weight": 0.14,
+      "license": "ODC-By-1.0; review Common Crawl terms and source rights"
+    },
+    {
+      "name": "openwebmath_en_01",
+      "kind": "parquet",
+      "dataset": "open-web-math/open-web-math",
+      "config": "default",
+      "split": "train",
+      "text_field": "text",
+      "url": "https://huggingface.co/datasets/open-web-math/open-web-math/resolve/main/data/train-00001-of-00114-e32fc2813a15f61c.parquet",
+      "weight": 0.14,
+      "license": "ODC-By-1.0; review Common Crawl terms and source rights"
+    },
+    {
+      "name": "stage0_chat",
+      "kind": "local_json",
+      "path": "../stage0/data/raw/chat_data.json",
+      "weight": 0.02,
+      "license": "local user-provided data"
+    }
+  ]
+}
